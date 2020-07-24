@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor entityID="OAuthPlayground" urn:name="OAuthPlayground" ID="Gj_l4TadoHneDNk0vyGp1p_lW-Z" urn:baseUrl="https://localhost:9031" urn:LogLevel="STANDARD" urn:isActive="true" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2">
+    <md:Extensions>
+        <urn:EntityExtension PFVersion="10.0.0.15" LicenseGroup="">
+            <urn:DigitialSignatureAliases>
+                <urn:ActiveVerificationCertAlias>4vqa75xiobsmycan6i312spw0</urn:ActiveVerificationCertAlias>
+            </urn:DigitialSignatureAliases>
+            <urn:Encryption>
+                <urn:EncryptionPolicy EncryptionAlgorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc" KeyTransportAlgorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p" EncryptAssertion="false" EncryptSubjectNameID="false" SLOEncryptSubjectNameID="false"/>
+                <urn:DecryptionPolicy AssertionEncrypted="false" SubjectNameIDEncrypted="false" AttributeEncrypted="false" SLOSubjectNameIDEncrypted="false"/>
+            </urn:Encryption>
+            <urn:ConnectionTemplateProperties/>
+            <urn:MetadataUrlId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <urn:enableAutoMetadataUpdate>false</urn:enableAutoMetadataUpdate>
+            <urn:AdditionalAllowedEntitiesConfiguration>
+                <urn:AllowAdditionalEntities>false</urn:AllowAdditionalEntities>
+                <urn:AllowAllEntities>false</urn:AllowAllEntities>
+                <urn:AdditionalAllowedEntities/>
+            </urn:AdditionalAllowedEntitiesConfiguration>
+        </urn:EntityExtension>
+    </md:Extensions>
+    <md:RoleDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" xsi:type="urn:PFOAuthRoleDescriptorType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <md:Extensions>
+            <urn:RoleExtension LastModified="2020-02-03T22:07:39.515Z"/>
+        </md:Extensions>
+        <urn:OAuthSettings>
+            <urn:OAuthSAMLBearerMapping tokenManagerId="jwt">
+                <urn:AttributeMap Name="Username" Type="Assertion" Value="TOKEN_SUBJECT"/>
+                <urn:AttributeMap Name="OrgName" Type="Text" Value="Ping Identity Corporation"/>
+                <urn:TokenAuthorizationIssuanceCriteria/>
+            </urn:OAuthSAMLBearerMapping>
+        </urn:OAuthSettings>
+    </md:RoleDescriptor>
+    <md:RoleDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" xsi:type="urn:PFAvailableCertsRoleDescriptorType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <urn:availableCert>
+            <urn:Base64EncodedCert>MIIDSjCCAjKgAwIBAgIGAXANFvoRMA0GCSqGSIb3DQEBCwUAMGYxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDTzEPMA0GA1UEBxMGRGVudmVyMQ0wCwYDVQQKEwRQaW5nMQwwCgYDVQQLEwNEZXYxHDAaBgNVBAMTE0NvbmZpZyBTaWduaW5nIENlcnQwHhcNMjAwMjAzMjIwNjE0WhcNMzUwMTMwMjIwNjE0WjBmMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ08xDzANBgNVBAcTBkRlbnZlcjENMAsGA1UEChMEUGluZzEMMAoGA1UECxMDRGV2MRwwGgYDVQQDExNDb25maWcgU2lnbmluZyBDZXJ0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnKxsb9BI0IjhHhKs2hM8IDcJyaDdqm4VBccZH7ZsrTNo2DZHUON5nLaj9Bj82DdWLo0BwGSV54j82jnT2pXI3uQaNi2BmHioWD03tjh1d9YpXEzbJUU9PQsTKVmM1Pn3TLI7u+m5ktlpdz6kE2z2L1QIGjFT6xk4vp2siFfUvVBH8m5ZXaUwBjFxAvq6poFufIOJWSj7yQ4yfV5fErXxL0TGRq5uKYpeoNnITocypV5o9/W0zgZaVftIBU/0Hd81vfJ0pS8Mi62WF9jH0pHFpHaI9EHUqoW9xQebBr/ca1AKtKWK3r47YYtLh2bK7n5sXR2gt6305XVMh/KgKNNKGwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQCG39S6tJx16sNGN68lgvZ2SS5GfLOpRzhZak+AfxIkWKl2DRCvCDxbLBTvussx5HWd5mE8skseK05hGQv4PRisWq6cpG7uTJ0qQXc9FegDWOTKilkoTuUD2mqKCJY3qV1DP/E6onSZ7Iz8K/8SxSdOIe/syLliOm1od3IU2uLmtCHYz1Pt0k5Mk5ZcA2skCQCvYkeD8gKkn96tUGwj6lrOewTmwZ18KwTMylBhe/8043TaMfjDBdyO0uC8uqP1JDDAH/dJTYfDiq8i7JSMiPsvrP0jzDrV7HJnhW5NmlWSnyacaQFiBq7zc7Kxd64xSPW60QBiL/KLafymrXGMHyUw</urn:Base64EncodedCert>
+            <urn:alias>4vqa75xiobsmycan6i312spw0</urn:alias>
+        </urn:availableCert>
+    </md:RoleDescriptor>
+    <md:ContactPerson contactType="administrative"/>
+</md:EntityDescriptor>

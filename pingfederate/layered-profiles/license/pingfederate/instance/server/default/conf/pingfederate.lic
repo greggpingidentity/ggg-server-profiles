@@ -1,0 +1,14 @@
+ID=1567006
+Organization=Ping Identity Corporation (master)
+Product=PingFederate
+Version=10.0
+IssueDate=2020-01-21
+EnforcementType=3
+ExpirationDate=2020-07-5
+Tier=Subscription
+PDPAPI=false
+SaasProvisioning=true
+WSTrustSTS=true
+OAuth=true
+SignCode=FF0F
+Signature=302C0214720F50C398AB692627DF52537B18567376C4AD3B021423AE48E72E5D0A205057B82A724F3AA978B165E9

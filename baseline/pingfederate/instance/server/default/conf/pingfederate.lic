@@ -1,0 +1,14 @@
+ID=00071221
+WSTrustSTS=true
+OAuth=true
+SaasProvisioning=true
+Product=PingFederate
+Version=10.1
+EnforcementType=0
+Tier=Free
+IssueDate=2020-06-01
+ExpirationDate=2030-12-31
+DeploymentMethod=Traditional
+Organization=Ping Identity Corporation
+SignCode=FF0F
+Signature=302C0214783A33A37DE5DE95FC76596FEEB36ED2C259825002146E016C5950F5BB5EB173E04E32219E44408DF2DA
